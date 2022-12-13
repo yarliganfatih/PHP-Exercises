@@ -44,6 +44,7 @@ function handler($req)
     if (handler($_REQUEST)) {
         echo 'Successful, Welcome ' . $_POST["username"];
     } else {
+        echo 'Try Again'; 
         header("Location: ../frontend/login.html");
     }
     ?>
